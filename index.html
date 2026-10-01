@@ -7,40 +7,31 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <div class="container">
     <div class="art">
-      <!-- YOUR PHOTO -->
       <img src="IMG_20261001_093222.jpg" alt="For Sir Rusty" class="profile-pic">
-
       <h1>HAPPY TEACHERS DAY SIR RUSTY!</h1>
       <h2>Thank you, SIR RUSTY 💐</h2>
       <p>for your patience, kindness, and dedication. thank you for teaching us 💙</p>
       <p>Thank you, SIR RUSTY! ❤️</p>
       <p>With love and gratitude from your student! ✋💚</p>
     </div>
-
     <div class="music-section">
       <div class="music-icon">🎵</div>
       <h3>A Special Song For Sir Rusty</h3>
       <p class="music-text">A little song made with love and gratitude 💚</p>
-
-      
       <audio id="teacherSong" preload="auto">
         <source src="Lyca-Gairanod-Puede-Nang-Mangarap.mp3" type="audio/mpeg">
       
-
       <button class="play-button" id="playButton" onclick="toggleSong()">
         🎵 Play Song
       </button>
     </div>
   </div>
-
   <script>
     function toggleSong() {
       const song = document.getElementById("teacherSong");
       const button = document.getElementById("playButton");
-
       if (song.paused) {
         song.play();
         button.innerHTML = "⏸ Pause Song";
@@ -49,12 +40,9 @@
         button.innerHTML = "🎵 Play Song";
       }
     }
-
-    // Auto-reset button when song ends
     document.getElementById("teacherSong").onended = function () {
       document.getElementById("playButton").innerHTML = "🎵 Play Song";
     };
   </script>
-
 </body>
 </html>
